@@ -1,0 +1,193 @@
+from pathlib import Path
+import json
+R=Path(__file__).resolve().parents[1]
+def w(p,s):
+ p=R/p;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(s,encoding='utf-8')
+def j(p,v):w(p,json.dumps(v,ensure_ascii=False,indent=2))
+w('01_HISTORIA/HISTORIA.md','''# WIEŻA, KTÓRA UKRADŁA JUTRO
+## Pierwsze dziesięć minut
+Jest wieczór przed twoimi urodzinami. Kurier zostawia paczkę od siostry, Idy, która zniknęła sześć dni wcześniej. W środku: czerwony szalik, fotografia twojego domu i bilet. Na zdjęciu dom stoi na dnie morza. Data odbioru paczki: jutro. Na bilecie wypisano numer miejsca 0.
+
+Za oknem pojawia się światło latarni na klifie, który do tej pory był pusty. Dopiero z mostu widać, że latarnia jest dolnym oknem ogromnej wieży. Żadne piętro nie pasuje rozmiarem do następnego. Na szczycie kręci się zegar bez wskazówki minutowej. Przy wejściu stoi tablica z nazwiskami lokatorów. Twoje nazwisko jest przekreślone. Nazwisko Idy dopisano świeżą miedzią.
+
+Pierwszą rzecz, którą robisz, jest próba powrotu. Za twoimi plecami most nadal istnieje, ale prowadzi do drugiego wejścia tej samej wieży. W pierwszym wagonie znajdziesz worek podróżny Idy. Jest mokry, choć peron jest suchy. Pod nim leży oparzony rękaw. Te dwa ślady będą ważne później.
+
+## Reguła świata
+Wieża przechowuje niewykorzystane wersje przyszłości. Można kupić w niej zmianę jednego przyszłego wydarzenia, płacąc czasem, który ktoś miał jeszcze przeżyć. Przeszłości nie da się zmienić. Wieża potrafi jednak wystawić wiarygodną rekonstrukcję i sprzedać ją komuś jako „drugą szansę”. Każde piętro jest sceną dowodową: nie oddaje prawdy wprost, lecz posiada materialne sprzeczności, które gracz może zbadać.
+
+Przyszłość ma rozgałęzienia; gracz nie musi udawać, że wszystko jest z góry przesądzone. Na każdym piętrze zmienia małe wydarzenie i ogląda realny skutek. Błędna hipoteza nie kończy kampanii. Zmiana dotyczy próby, a odtwarzanie jej jest częścią mechaniki. Po zatwierdzeniu rozdziału wynik zostaje zapisany.
+
+## Co naprawdę zrobiła Ida — spoiler
+W dzieciństwie straciliście ojca w pożarze warsztatu. Ida trafiła do wieży z rachunkiem znalezionym w jego rzeczywistych rzeczach. Chciała kupić mu ratunek. Rekonstrukcja teatru pokazuje jej, że potrafi doprowadzić do jego ucieczki; Ida nie zauważa, że ta scena nie jest przeszłością. Podpisuje kontrakt całym swoim przyszłym życiem.
+
+Po podpisie odkrywa w ogrodzie grób gracza, datowany na jutro. Wieża zataiła, że czas bliskich jest zabezpieczeniem kontraktu. Ida zostaje na szczycie i fizycznie zatrzymuje mechanizm, by nie pobrał drugiej zapłaty. To zatrzymanie wywołuje anomalie i wysłanie paczki przed jej nadaniem. Ida układa trasę ratunkową: szalik oznacza prawdziwe wyjście z każdej fałszywej sceny.
+
+Ojciec naprawdę umarł. Nie pojawia się na końcu cudownie ocalony. Rekonstrukcja ma jego twarz, ruchy i mieszkanie, ale nie ma jego historii. Ida może wrócić, jeśli cofniecie kontrakt przed pobraniem zabezpieczenia. Wieża musi wówczas zwrócić czas także wcześniejszym klientom; jej konstrukcja zacznie znikać. Finał jest ewakuacją, a nie kolejnym ekranem z trzema przyciskami.
+
+## Piętro 1 — Peron Ostatniego Odjazdu
+Oczekiwanie: jedziesz za siostrą. Zaskoczenie: pociąg wiezie pasażerów, którzy dopiero zostaną urodzeni. Każdy wagon pokazuje inny koniec tej samej podróży. W oknie pierwszego widać zatopiony pałac; drugiego — płonący dom; trzeciego — pusty ogród. Pasażerowie nie mówią, a miejsca z tabliczkami mają różne wiekujące się przedmioty.
+
+W bagażu Idy pojawia się bezpiecznik w trzech stanach: mokry, spalony, nienaruszony. Gracz wybiera nie numer na bilecie, lecz zdarzenie, które chce zbadać, i przenosi bagaż do wagonu widocznego w odbiciu zegara. Mechanika pozwala stanąć w dwóch wersjach peronu. Konduktor kontroluje bilet, ale jego cień kontroluje przyszły moment. Gracz oddaje bilet cieniowi. Po przejściu zewnętrzne okna pokazują już ten sam ocean. Droga na drugie piętro otwiera się przez wagon, nie przez losową ścianę.
+
+Dowód: bilet kupiono sześć dni temu, a kontroli dokonano jutro. Efekt: zegar odzyskuje pierwszą wskazówkę; z klifu znika jedno z dwóch wejść.
+
+## Piętro 2 — Ocean Za Szkłem
+Wielka sala balowa jest nienaruszona, choć całe dolne piętro wypełnia woda. Żyrandol w odbiciu porusza się zgodnie z inną grawitacją. Ida przeszła tędy, pozostawiając szalik po suchej stronie lustra. Nurek Dzwonowy pilnuje stacji pompowania; nie jest obowiązkowym przeciwnikiem.
+
+Gracz chodzi po suchych galeriach i może „wejść w odbicie”: sala odbita ma wodę w suficie i suche podłoże. Przesunięcie jednej rzeczy w odbiciu przesuwa jej odpowiednik w sali. Trzeba przenieść żyrandol nad awaryjne koło, zdjąć z niego ciężar i otworzyć galerię, zanim górna warstwa wody zamknie wejście. Nie chodzi o obrócenie trzech zaworów we właściwej kolejności: sam gracz układa przestrzeń przejścia.
+
+Dowód: woda ma datę przyszłej katastrofy, ale rachunek wystawiono przed wyprawą Idy. Na podestach są trzy identyczne dziecięce buty, należące do trzech sprzecznych wersji tej samej osoby. Wieża nie ratuje jednego świata; wybiera, który dostaniesz.
+
+## Piętro 3 — Teatr Niewydarzonego
+Scena przedstawia wasz warsztat z wieczoru pożaru. Na widowni siedzą drewniane figury. Jedno puste miejsce ma twoją wielkość. Gracz może zajrzeć za scenę i obejrzeć mechanizm wykonujący wszystkie role. Ruch Aktorki Bez Roli odtwarza drogę Idy.
+
+Próby pozwalają przesuwać bezpiecznik, otwierać drzwi i podawać gaśnicę. Każde z tych działań pozornie ratuje ojca. Jednak w jednej próbie wychodzi on z lewej strony, w kolejnej z prawej, mimo że prawdziwy dom miał tylko jedno wyjście. Znalazłeś już jego fotografię i plan. Celem jest udowodnienie, że scena kłamie: zmienić pojedynczy element, którego mechanizm nie powinien odtwarzać — wyprowadzić ojca za kulisy przez drzwi narysowane dopiero po katastrofie. „Ocalony” zastyga tam w pusty manekin. W tym momencie role na widowni obracają głowy do gracza, a kurtyna podnosi się bez muzycznego straszaka.
+
+Dowód: rachunek Idy ma dopisek „rekonstrukcja” widoczny tylko w świetle z kulis. Gracz niszczy projektor konkretnej iluzji, nie pamięć o ojcu. Odblokowuje się fragment prawdziwej przyszłości Idy: pracownia, która nie powstała, bo oddała całe swoje życie.
+
+## Piętro 4 — Ogród Przyszłych Grobów
+Ogród jest spokojny i piękny, bez przypadkowych ruin. Na tabliczkach są daty jutra i dalszych lat. Na jednej — imię gracza. W drugim końcu ogrodu chodzi twoja przyszła kopia. Powtarza nie przeszłe ruchy, tylko ruchy, które zapiszesz w następnych dziesięciu sekundach.
+
+Mechanika: gracz nagrywa krótką ścieżkę jako echo, a potem współpracuje z nim w równoległej wersji ogrodu. Echo może trzymać wrota, przenieść lampę i uruchomić windę, ale nie może rozwiązać zagadki zamiast gracza. Cel to odnaleźć fizyczne zabezpieczenie kontraktu, przenieść je do domu widocznego w obu wersjach, a następnie ocalić echo przed zniknięciem jego ścieżki. Jeśli tylko wejdziesz na wyższe piętro, stracisz dowód, ale kampania pozwoli wrócić przed finałem.
+
+Dowód: grób jest wynikiem kontraktu, a nie proroctwem. Tabliczka zmienia datę, kiedy gracz wyjmuje zabezpieczenie. Schody do szczytu otwiera fizyczne ocalenie przyszłej kopii. Nie ma kodu dat do wpisania.
+
+## Piętro 5 — Serce Pożyczonego Świtu
+Ida stoi w mechanizmie zatrzymującym wielkie koło. Jest żywa i wyczerpana. Rozpoznaje szalik bez rozmowy. Podaje graczowi oryginał kontraktu; na końcu mała klauzula o zabezpieczeniu. Na kołach poruszają się fragmenty domów wcześniejszych klientów. To konkretni ludzie, których ratunek zacznie znikać po wyłączeniu.
+
+Anioł Ostatniej Minuty jest egzekutorem, nie sadystycznym bogiem. Próbuje doprowadzić procedurę do końca. Uderzenia mieczem odrzucają go na chwilę, ale nie usuwają umowy. Gracz zatrzymuje trzy koła przez odtworzenie odkrytych sprzeczności: dwa miejsca tego samego biletu, fałszywy ratunek ojca i własne przeniesione zabezpieczenie. Każde koło zmienia układ mostów i otwiera fizyczną drogę do Idy. Anioł uczy się ostatniej trasy; echo pozwala go zmylić. Bez walki pełni rolę ruchomej przeszkody z wyraźnymi ostrzeżeniami.
+
+## Finał — trzy konsekwencje, trzy sceny
+Powrót: zrywasz kontrakt. Ida odzyskuje czas, wszystkie przeniesione krzywdy zostają zwrócone ich autorom. Wieża oddaje swoje przyszłości i znika. Gracz eskortuje Idę po znikających piętrach; trasa jest czytelna i posiada checkpointy. W epilogu nie ma ojca, ale powstaje jej własny warsztat. Cena: tracicie rekonstrukcję, której tak bardzo pragnęła.
+
+Nowy kustosz: świadomie zastępujesz Idę. Siostra wraca, wieża trwa. Gracz pozostaje grywalny w jej wnętrzu i może otwierać bezpłatne drogi pozostałym klientom. Epilog zmienia główny hub w pracownię naprawczą, nie kończy się ekranem śmierci. Cena: bohater traci zwykłą drogę do domu, a jego grób w ogrodzie znika, bo nie umarł.
+
+Unieważnienie: wymagane trzy oryginalne dowody z pięter 1/3/4. Umowa zawiera zdarzenie niemożliwe, została sprzedana jako ratunek przeszłości i ma ukryte zabezpieczenie. Gracz przywraca ludziom wyłącznie odebrany czas, nie zmienia już przeżytych wydarzeń. Wieża traci funkcję handlową, lecz pozostaje budowlą. Ida schodzi z koła, świat za oknami przesuwa się z nocy do świtu. Ostatnia scena: oboje otwieracie drzwi prawdziwego warsztatu, który trzeba dopiero wybudować. To nagroda za śledztwo, nie za zebranie stu znajdziek.
+
+## Jak opowiadać tę historię
+Bez dawnych dialogów i bez NPC wygłaszających zagadkowe sentencje. Kamera pozostaje pod kontrolą gracza. Informacje przekazują przedmioty, wydarzenia, krótkie podpisy, zachowania postaci i dowody. Dziennik opisuje obserwacje prostym językiem: „Data na bilecie jest późniejsza niż data zakupu”. Maksymalnie 30 słów w jednym okienku. Każdy twist ma wcześniejszą poszlakę. Można szybko powtórzyć próbę, pominąć animację i wrócić po dowód.
+''')
+w('01_HISTORIA/MECHANIKI_I_ROZWIAZANIA.md','''# Sceny interaktywne — dokładny kontrakt
+## Zasada
+Zagadki to działania w świecie i sprawdzanie hipotez. Nie ma zamków z arbitralnymi kodami, sekwencji kolorowych dźwigni ani „znajdź trzy klucze”. Wszystkie rozwiązania mają wizualną poszlakę przed wymaganym działaniem. Czasówki resetują tylko scenę, nigdy kampanię. Po trzech błędach gracz może włączyć pełną wskazówkę.
+
+## P1 — Kontrola, której jeszcze nie było
+Stan początkowy: bilet w dłoni, kontroler przy drzwiach, cień na przeciwległej ścianie, odbicie zegara wskazuje drugi wagon. Zwykły kontroler stempluje bilet datą dzisiejszą, a zamknięte drzwi pokazują jutro. Gracz ogląda oba stemple, odkrywa przesunięcie i używa biletu przy cieniu (światło regulowane suwakowym kołem, nie kodem). Cień stempluje jutro. Przeniesienie mokrego bagażu do wagonu z oceanem odblokowuje właściwą podróż. Dostępne alternatywne wagony dają krótkie zapowiedzi, a wracają na peron. Nie są trwałym złym wyborem.
+Rozwiązanie: odkryj dwa stemple → ustaw lampę tak, aby cień sięgał drzwi wagonu → oddaj bilet cieniowi → przenieś bagaż do oceanicznego wagonu → wejdź. Lampa ma dwie czytelne skrajne pozycje i podgląd cienia.
+Wskazówki: 1 „Kto stempluje bilet w innej dacie?” 2 pokaż odbicie. 3 wyróżnij cień i docelowe drzwi.
+
+## P2 — Ruch w odbiciu
+Dwie wersje tej samej sali, geografia 1:1. Warstwa A: woda w basenie, zablokowane koło. B: woda w suficie, żyrandol na wózku. Przejście przez zaznaczoną taflę odbicia przenosi gracza na bezpieczny odpowiednik. Przesuń żyrandol po szynie w B, dojedź nim nad ciężar w A, wróć i przypnij linę. Lampy wokół koła zapalają się, pokazując odciążenie. Obróć dostępne koło i przejdź podniesioną suchą galerią.
+Rozwiązanie jest przestrzenne, nie liczbowe: gracz widzi linię szyny i odpowiednik celu w obu warstwach. Po pierwszym przejściu do B zatrzymuje się ściek wody, aby dać czas na orientację. Sekwencja później trwa 40 sekund; opcja dostępności usuwa limit. Błąd cofa do tafli, przywraca pozycję żyrandola, bez utraty HP.
+Opcjonalna ścieżka: doprowadź Nurka do pękniętego przewodu przez zapalone lampy; dostaniesz suchą drogę awaryjną i widok rachunku bez nurkowania.
+
+## P3 — Próba, której nie da się zagrać
+Scena ma punkty: bezpiecznik, gaśnica, drzwi frontowe, wyjście kulis, projektor. Gracz ogląda krótki spektakl (20 s), cofa go i przestawia maksymalnie dwa rekwizyty. Żadna próba nie robi trwałego pożaru mapy. Uratowany manekin może wyjść przez dowolne narysowane drzwi. Prawdziwy plan warsztatu pokazuje brak wyjścia po stronie kulis. Wyprowadź go właśnie tam, aby ujawnić projekcję. Podświetlony kabel prowadzi od figury do projektora. Wyłącz projektor, zabierz oryginalny rachunek.
+Nie wymagaj pięciu prób: plan i ślady ruchu dostępne od wejścia. Test bezpiecznika to opcjonalna demonstracja. Wersja kooperacyjna pozwala jednej osobie sterować próbą, drugiej chodzić za sceną; wszyscy widzą ten sam wynik.
+
+## P4 — Zostaw sobie pomoc
+Po pokazaniu własnego grobu gracz dostaje możliwość zapisu echa na 10 sekund. Stacje A/B/C w ogrodzie: A trzyma wrota, B to punkt odbioru lampy, C to winda, którą otwiera światło lampy. Próba 1: nagraj stanie przy A przez 10 sekund. Uruchom echo; gdy trzyma A, wejdź do kaplicy przez B, weź lampę i ujawnij oryginał zabezpieczenia. Dokument jest zapisany trwale po obejrzeniu, więc reset próby go nie zabiera. Próba 2: postaw lampę przy C, co włącza windę. Nagraj drogę od B do C (do 10 sekund), zresetuj wyłącznie pozycję próbnego echa, uruchom je i sam stań przy A. Echo przejdzie przez otwarte wrota do oświetlonej windy. Wyjście echa przez C usuwa grożącą mu wersję przyszłości i kończy scenę. Nie trzeba być równocześnie w trzech miejscach; układ galerii pozwala dojść od konsoli nagrywania do A w 2 sekundy, a echo ma 3-sekundowe opóźnienie startu.
+Ważne: tutorial najpierw pokazuje prosty zapis stania na jednej stacji, potem pozwala dowolnie nagrywać. Echo fizycznie otwiera mechanizmy, nie powoduje obrażeń, nie kopiuje ekwipunku ani przedmiotów. Minimalna ścieżka zapisuje pozycje co tick przez 200 ticków (20 Hz), interpolacja wizualna klienta. Po załadowaniu świata aktywna próba resetuje się do checkpointu, ukończenie zostaje.
+Przejście wymaga dwóch oddzielnych prób, lecz nie wymaga refleksu; w trybie spokojnym echo czeka na sygnał. Nieudana próba cofa zabezpieczenie na piedestał. Brak miękkiej blokady i możliwości duplikacji.
+
+## P5 — Proces zamiast paska życia
+Anioł ma trzy czytelne zachowania: patrol, szarża po zapowiedzianym pasie, odcięcie ostatnio użytego mostu. Przed szarżą 2 sekundy światła i dźwięku + napis. Działa bez shaderów. Bezpieczne nisze co 8 bloków. Każde koło ma fizyczny zamek na konkretny dowód. Użycie dowodu nie usuwa go z trwałego rejestru.
+Koło 1 zatrzymuje sprzeczny bilet: przejdź echo-mostem, umieść bilet podczas kontroli cienia. Koło 2 zatrzymuje rachunek rekonstrukcji: przyciągnij Anioła do fałszywego obrazu, przejdź kulisami. Koło 3 zatrzymuje zabezpieczenie: nagraj echo trzymające mechanizm, sam wyjmij zabezpieczenie. W każdej fazie widoczna nowa droga do Idy. Miecz ogłusza na 2 s z cooldown 8 s, nie zabija bossa. Po trzech kołach Anioł opuszcza skrzydła i przestaje atakować.
+W trybie spokojnym kontakt cofa do niszy bez obrażeń, szarże zastępują się powolnym patrolem. Czas finału bez limitu. W finale „Powrót” znikanie pięter zaczyna się dopiero po wejściu gracza na następną sekcję, więc nie jest bezlitosnym parkourem.
+
+## Dowody i niezbędne pomoce
+Bilet (P1), szalik (marker), bagaz Idy (P1), rachunek (P3), zabezpieczenie (P4), kontrakt (P5). Są zapisem stanu, nie zwykłym przedmiotem do zgubienia. Można pokazać ich kopię w dzienniku, a usunięcie reprezentacji z ekwipunku nie usuwa progresu. Trzy oryginalne dowody są osiągalne przed finałem i wracając windą z P5. Dziennik pokazuje brakujące dowody wprost po ujawnieniu reguł kontraktu.
+''')
+w('01_HISTORIA/SCENARIUSZ_BEZ_DIALOGOW.md','''# Scenariusz wydarzeń i krótkie teksty
+Nie ma pliku dialogów ani rozmów z poprzedniego projektu. Poniższe napisy to informacja przy przedmiotach i obserwacje dziennika, nie kwestie wypowiadane przez NPC.
+
+00. Paczka: data nadrukowana o jeden dzień późniejsza niż bieżąca data fabularna (stały kalendarz kampanii, nie systemowa data urządzenia). Szalik w środku. W świetle latarni na klifie pojawia się wieża. Tekst: „Przesyłka od Idy. Nadano jutro.”
+01. Most: obrót kamery jest dobrowolny; drugie wejście pojawia się w oddali, jeśli gracz próbuje wrócić. Dziennik: „Most prowadzi z powrotem do wieży.”
+02. Bagaż: krople tylko na jednej walizce, w niej rękaw i bezpiecznik. Dziennik: „Walizka jest mokra. Rękaw pachnie spalenizną.”
+03. Stempel: dzisiejsza i jutrzejsza data pokazywane obok siebie, symbol pieczęci również ma inny kształt. Dziennik: „Cień kontroluje inną podróż.”
+04. Sala: odbicie żyrandola porusza się zanim poruszy się żyrandol w sali. Bez głośnego straszaka. Dziennik: „W odbiciu można zmienić to, czego tutaj nie dosięgam.”
+05. Buty: trzy pary z tym samym nazwiskiem i różnymi datami. Dziennik: „To trzy przyszłości jednej osoby.”
+06. Teatr: plan domu na stole; właściwe drzwi oznaczone, narysowane wyjście w kulisach w innym kolorze atramentu. Rachunek: „Usługa: rekonstrukcja. Zwrot niewykorzystanego czasu: wykluczony.”
+07. Iluzja: figura wychodzi za kulisy i staje się bez twarzy; ciepłe światło zmienia się na robocze, pozostaje kontrola ruchu. Dziennik: „Scena potrafi uratować aktora. Nie mojego ojca.”
+08. Ogród: nazwisko gracza pojawia się na tabliczce, bez utraty ekwipunku. Przyszła kopia podaje lampę, po czym cofa ten ruch. Dziennik: „To możliwy wynik, nie wyrok.”
+09. Zabezpieczenie: karta nosi nazwisko gracza i podpis Idy; dopisek jest mniejszy, ale dostępny po zwykłym powiększeniu interfejsu. Dziennik: „Ida oddała swój czas. Wieża dopisała także mój.”
+10. Szczyt: Ida puszcza jedną dłoń z koła, aby podać kontrakt; mechanizm rusza o blok i zatrzymuje się, kiedy wraca. Gracz widzi dlaczego nie może po prostu wyjść.
+11. Koniec: opcje opisują realne konsekwencje po 1–2 zdania, gracz potwierdza je po poznaniu warunków. Zero „tajemniczych” nazw przycisków. Wszyscy uczestnicy muszą zagłosować, administrator ma opcję odblokowania zakleszczonego głosowania po 60 s.
+
+Podpowiedzi są dostępne na życzenie: obserwacja → lokalizacja → pełne rozwiązanie. Nie wyskakują automatycznie w środku oglądania mapy. Opcja audio-opisu informuje o zmianach otoczenia.
+''')
+entities=[('konduktor','Konduktor Jutrzejszego Pociągu',26,'Neutralny kontroler, stempel i cień mają oddzielne hitboxy interakcji. Nie ma walki z obowiązkowym NPC.',27),('nurek_dzwonowy','Nurek Dzwonowy',32,'Czteronożny serwisant podwodny. Idzie za zapaloną lampą; odsuwa rurę, nie prowadzi dialogu.',32),('aktorka_bez_roli','Aktorka Bez Roli',18,'Marionetka odtwarzająca próby. Neutralna, po ujawnieniu projekcji zatrzymuje się, bez utraty dowodu.',32),('ida','Ida',20,'Siostra gracza. Chroniona questowo, jej stan uwolnienia synchronizowany; model pozostaje w epilogu.',24),('aniol_minuty','Anioł Ostatniej Minuty',120,'Egzekutor umowy. 5 obrażeń kontaktu, 7 szarży, 2 sekundy ostrzeżenia; walka rozwiązywana przez koła, nie HP.',40)]
+j('01_HISTORIA/POSTACIE_I_MOBY.json',[dict(id=i,nazwa=n,hp=hp,zachowanie=b,liczba_kuboidow=len(json.loads((R/'02_MODELE/GEOMETRIA_ZRODLOWA.json').read_text())[i]),rozmiar_tekstury=[128,128],model=f'02_MODELE/{i}/{i}.bbmodel',geometria=f'02_MODELE/{i}/{i}.geo.json',animacje=f'02_MODELE/{i}/{i}.animation.json',uwagi='Geometria i podstawowe pliki idle/walk gotowe. Integracja renderera, kontrolerów i animacji specjalnych do wdrożenia.') for i,n,hp,b,c in entities])
+w('01_HISTORIA/PROJEKT_MAP.md','''# Pięć pięter jednej wieży
+## Wspólna architektura
+Wieża na klifie, zewnętrzna średnica 96 bloków, wysokość docelowa 240. Wewnątrz piętra są szersze niż zewnętrzna bryła; ładowane jako osobne przestrzenie instancji. Hub: wejście, winda i kopia dziennika. Do każdego ukończonego piętra można wrócić. Główna ścieżka ma szerokość >=3 bloki, brak obowiązkowego parkouru. Architektura jest nienaruszona: sklepienia, filary z bazami i głowicami, powtarzalne detale, ramy okienne, balustrady. Ślady wydarzeń są celowe i lokalne.
+
+W ZIP-ie dla każdego poziomu jest ilustracja koncepcyjna oraz osobny render faktycznej struktury NBT. Ilustracja przedstawia DOCZELOWY poziom szczegółowości. NBT jest mniejszym, dekorowanym modułem 47×35×47, zgodnym z limitem struktury 48 bloków, do dalszej rozbudowy. To nie screenshot gry. Przekrój renderu ukrywa przednią ścianę, ale NBT zawiera całą obwodową ścianę i wejście.
+
+## 01 Peron
+Docelowo 96×96×40. Dwa pociągi, zegar nad peronem, wyjście przez wagon, galeria wokół. Komory wagonów pokazują trzy przyszłości. Kolory: granat, bordo, mosiądz. Oś widokowa od wejścia do zegara. Ślady Idy: walizka, szalik. Moduł NBT zawiera jeden wagon z oknami i wejściem, tory, filary, zegar, bagaże i dwie schodowe drogi na galerię.
+## 02 Ocean
+Docelowo 96×96×48, dodatkowa identyczna warstwa odbicia. Podwójna sala, suche galerie, akwarium pod szklanym pomostem, żyrandol i stacja Nurka. Kolory: błękit, kość słoniowa, srebro. Nigdy nie trzeba płynąć bez tlenu do celu fabularnego. NBT ma basen, szkło, podest, pomost i żyrandol; ruch i alternatywną grawitację realizuje mod, nie NBT.
+## 03 Teatr
+Docelowo 96×80×40, widownia z miejscami, kulisy po obu stronach, scena z budynkiem warsztatu. Kolory: bordo, złoto, papier. Cały mechanizm kulis widoczny po udowodnieniu fałszu. NBT ma scenę, rzędy foteli, domek, manekiny i czerwony księżyc. Projector i próby do wykonania w kodzie.
+## 04 Ogród
+Docelowo 96×96×48, dwa równoległe stany przestrzeni. Cztery uporządkowane wyspy kwiatowe, białe kaplice, kanały, tabliczki, dwa łuki. Kolory: lawenda, róż, kość słoniowa, ciepłe złoto. Groby są eleganckimi oznaczeniami futures, bez makabry. NBT ma cztery uformowane drzewa, kanały, ścieżki, pomniki i łuk; nie jest losowo zniszczonym lasem.
+## 05 Serce
+Docelowo 112×112×64, pionowy mechanizm, trzy radialne drogi, bezpieczne nisze i balkon Idy. Kolory: fiolet, złoto, czerń. Koła wielkości budynków przesuwają się z wyraźnym zapowiedzeniem; obrażenia nie resetują całej fazy. NBT ma trzy miedziane pierścienie, świecący rdzeń, podłogę areny i trzy kotwice. Animowane koła najlepiej zrealizować jako encje/renderer; nie przestawiać tysięcy bloków co tick.
+
+## Oświetlenie i wykończenie
+Zewnętrzny chłód, wnętrza ciepłe, co najmniej jeden rozpoznawalny obiekt z wejścia. Nie przesadzaj z mgłą; cel zagadki musi być czytelny. Podświetlane krawędzie interakcji + podpis + symbol, nie tylko kolor. Bez obowiązkowych shaderów. Lampy vanilla wspierają podstawowy wygląd. Nie kopiuj ilustracji 1:1 jako obietnicy, że shader jest częścią moda.
+''')
+w('01_HISTORIA/TECHNICZNE_I_ODBIOR.md','''# Wdrożenie Fabric 1.21.4
+Minecraft Java 1.21.4, JDK 21, namespace wieza, Fabric. Pakiet danych format 61, zasobów 46. Zgodne wersje Loader/Loom/Yarn/Fabric API przypnij po sprawdzeniu oficjalnych metadanych 1.21.4; nie używaj bieżących API z 1.21.11 lub 26.x.
+
+Źródła wersji: https://fabricmc.net/2024/12/02/1214.html ; https://github.com/FabricMC/fabric-docs/blob/main/versions/1.21.4/develop/getting-started/setting-up-a-development-environment.md ; https://www.minecraft.net/fr-fr/article/minecraft-java-edition-1-21-4
+
+## Modele
+Pięć .bbmodel jako źródła Blockbench Bedrock, pięć geometrii .geo.json i pięć plików .animation.json w standardzie Bedrock/Molang. Każdy ma kości części i osadzoną teksturę 128×128. Idle/walk są bazowymi zapisami animacji, nie gotową choreografią scen. Minecraft Java nie czyta ich natywnie: potrzebny renderer Fabric albo zgodna z 1.21.4 wersja biblioteki animacji + konwersja w razie różnic schematu. Nie dołączono bibliotek, JAR moda ani gotowych kontrolerów. Animacje specjalne (stempel, pływanie, scena, szarża, uwolnienie) trzeba wykonać i sprawdzić w edytorze.
+Rendery pokazują rzeczywistą geometrię, koncepcje AI mają kierunek wizualny i mogą różnić się drobnymi detalami. Geometria jest źródłem prawdy przy eksporcie. Podczas wdrożenia sprawdź pivots, UV, hierarchię i animację każdego modelu w Blockbench. Ręce i nogi są oddzielnymi kośćmi, nie sklejaj wszystkich części do jednego mesh.
+
+## Zapis i multiplayer
+CampaignState per instancja: schemaVersion=1, stage enum, solvedScenes set, evidence set, committedOutcome, unlockedFloors, idaFreed, ending enum/null. Zapis przy checkpoint i autosave. PlayerState: journalPagesSeen, accessibility, hintLevel. Jedna drużyna 1–4 osoby na kampanię, dołączenie w trakcie synchronizuje etap i przestrzeń. Sceny manipulują stanem instancji, nie zwykłym Overworld. Echo jest jedną autorytatywną encją serwera z nagranym ruchem; klient nie wysyła gotowego rozwiązania.
+Interakcja C2S zawiera id interakcji i intencję; serwer sprawdza etap, wymiar, dystans <=6, cooldown i dostępność przedmiotu-stanu. Packety zmian świata mają rewizję; klient ignoruje stare. Dialogi nie są wymagane; napisy opisowe przy obiektach nie blokują ruchu. Kampania nie powinna zależeć od realnej daty systemu, użyj stałego kalendarza fabularnego.
+
+## Przywracanie prób
+Każda scena ma initial, running, solved; reset przywraca lokalne obiekty i checkpoint, nie kasuje dowodów. Restart w trakcie próby ładuje initial tego etapu. Rozłączenie właściciela echa resetuje próbę po bezpiecznej synchronizacji. Śmierć oddaje wszystkie reprezentacje dowodów. Dodatkowy dziennik /wieza journal. Debug /wieza reset_scene wymaga OP. Budowa /wieza start generuje nową instancję bez nadpisywania bazy gracza. NBT w dołączonym datapacku jest demonstracją w osobnym pustym świecie, nie implementacją tego systemu.
+
+## Audio i UI
+Brak nagrań audio w paczce. Brief: stempel suchy trzask, pociąg cichy metal, Ocean odgłos kropli i rezonans szkła, Teatr skrzypiące deski bez głośnych scare, Ogród wiatr i ptaki, Serce niski rytm zegara. Odtwarzanie napisów dźwięków; jasność ostrzeżenia bez stroboskopu. Dostępność: echo bez limitu czasu, tryb spokojny, napisy dużą czcionką, ograniczone cząstki, żadnych zagadek opartych wyłącznie na słuchu.
+
+## Kryteria odbioru gotowego moda
+1. Gradle build z JDK21, faktyczny JAR, uruchomienie klienta 1.21.4 i dedykowanego serwera.
+2. Kompletna trasa od paczki po trzy osobne zakończenia; wszystkie poszlaki obecne przed zagadką.
+3. Dwie osoby w każdej scenie, wejście późnego gracza, rozłączenie przy odbiciu/echu/finale.
+4. Śmierć z dowodem, restart w każdym rozdziale, reset zagadki, brak duplikacji i utraty stanu.
+5. Wszystkie modele bez błędów UV, proporcji i pivots; animacje bez przenikania w typowych pozycjach.
+6. Każda mapa ma trzyblokową trasę, sprawne schody, lampy i nieprzerwany powrót do windy.
+7. Bez shaderów, tryb spokojny, bardzo wolne rozwiązywanie zagadek, powiększone napisy.
+
+W paczce wykonano walidację plików, nie uruchomiono Minecrafta ani Blockbench. Nie twierdź, że kompletne mechaniki działają: to projekt i zasoby do produkcji.
+''')
+w('CZYTAJ_NAJPIERW.md','''# Wieża, która ukradła jutro — nowa paczka projektowa
+Nowy projekt, bez poprzednich dialogów, mobów i fabuły.
+
+Zacznij od 00_OKLADKA.png i 01_HISTORIA/HISTORIA.md. W 03_MAPY każde piętro ma własną ilustrację koncepcyjną i obraz faktycznie zbudowanej struktury. W 02_MODELE każda postać ma edytowalny model, geometrię, teksturę, bazowe animacje, dokładne rendery i osobną koncepcję wyglądu.
+
+**Gotowe:** historia i scenariusz bez rozmów NPC, pięć scen zagadkowych opartych na zmianie zdarzeń, trzy zakończenia, pięć modeli z detalami stroju, maski i mechaniki oraz teksturami 128×128, pięć dekorowanych struktur 47×35×47, zdjęcia koncepcyjne poziomów i postaci, prompt zawierający pełną specyfikację.
+**Do wdrożenia:** kod moda Fabric, renderery Java, kontrolery i specjalne animacje, mechaniki scen, pełnowymiarowe mapy, dźwięki, test w grze. Nie jest to gotowy JAR ani kompletny zapis świata. Ilustracje AI nie są screenshotami z Minecrafta i nie pokazują dokładnie zawartości NBT; faktyczne modele i struktury mają własne rendery.
+
+## Oglądanie modeli
+Otwórz .bbmodel w Blockbench. Tekstura jest osadzona, dodatkowo dostępna jako PNG. .geo.json i .animation.json są zasobami Bedrock/Molang do integracji przez odpowiedni renderer; nie działają przez samo skopiowanie do Minecraft Java. Idle i walk to bazowe animacje, nie gotowy zestaw zachowań.
+
+## Ustawienie struktur
+Utwórz NOWY pusty świat kreatywny 1.21.4. Skopiuj folder 04_DATAPACK/wieza do jego datapacks. Włącz komendy. /reload, /function wieza:build. /tp @s 23 84 7. Piętra stoją obok siebie przy x=0,64,128,192,256, y=80, z=0. Przykład pojedynczej budowy: /place template wieza:03_teatr 0 80 0.
+Budowa nadpisuje zajęte bloki w obszarze x=0..302, y=80..114, z=0..46. Używaj pustego świata testowego. Każda struktura ma całą ścianę obwodową, wejście i dwa ciągi schodów. Render ukrywa fragment ściany dla widoku wnętrza. Zagadka nie działa w samym datapacku; to demonstracja map.
+
+## Prompt
+05_PROMPT/PROMPT_DO_SKOPIOWANIA.txt jest samodzielnym pełnym zleceniem wdrożenia. Dołącz też cały ZIP, aby programista otrzymał zasoby. 06_ZRODLA zawiera skrypty generujące modele i struktury, umożliwiające dalsze edytowanie.
+''')
+base='''Zbuduj fabularny mod Minecraft Java 1.21.4 FABRIC, JDK 21, namespace wieza: WIEŻA, KTÓRA UKRADŁA JUTRO. Masz załączony pełny folder projektu, ilustracje, modele i dekorowane struktury NBT. Historia ma być osobistym śledztwem w pięciu piętrach jednej niemożliwej wieży, nie zestawem zamków z kodami. Zachowaj reguły świata i wszystkie wcześniejsze poszlaki. Bez starych dialogów i bez filozofujących NPC.\n\nTwoim wynikiem ma być projekt z kodem, Gradle wrapper, README instalacji, zasoby i kompilowalny JAR. Nie zmieniaj wersji gry. Nie udawaj testów. Przy blokadzie wypisz co rzeczywiście sprawdzono i co wymaga uruchomienia. Przypnij kompatybilne zależności z oficjalnych źródeł.\n\nKOLEJNOŚĆ WYKONANIA\n1. Ustal zgodny z 1.21.4 projekt Fabric, komendy /wieza start i journal, izolowana kampania i checkpointy.\n2. Zaimplementuj pięć encji i przedmioty dowodowe jako trwały stan, użyj dostarczonych modeli z odpowiednią konwersją i rendererem. Dodaj specjalne animacje: stempel Konduktora, chód czterech nóg Nurka, marionetkowy spektakl, Ida przy kole, patrol/szarża Anioła. Sprawdź pivots i UV w Blockbench.\n3. Rozbuduj struktury modułowe do pełnych map według osobnych ilustracji; nie reklamuj małych NBT jako wielkiej finalnej mapy. Wieża powinna mieć piękną architekturę, nie przypadkowo zrujnowane drzewa i ściany.\n4. Wdroż sceny P1–P5 ze stanami resetu, widocznymi skutkami i podpowiedziami. Mechaniki odbicia i echa muszą działać na serwerze; bez shaderów nadal czytelne.\n5. Opowiedz fabułę przez wydarzenia, scenografię, rzeczy i krótkie podpisy. Brak obowiązkowych rozmów. Twist o fałszywym ratunku musi wynikać z planu domu i sceny, a nie nagłej informacji w finale.\n6. Trzy finały mają własne działania w świecie i epilogi. Ida nie jest nagrodą przedmiotową, ojciec nie wraca magicznie do życia.\n7. Zadbaj o 1–4 graczy, zapis/restarty, odzyskanie dowodów, dostępność i spokojny tryb. Wykonaj build i testy pełnego przepływu w kliencie i dedicated server.\n\nZASOBY I GRANICE\nIlustracje koncepcyjne to cel stylu, dokładne rendery modeli i struktur pokazują rzeczywiste zasoby. BBMODEL oraz Bedrock GEO nie działają natywnie w Java; zintegruj renderer/bibliotekę zgodną z 1.21.4. Nie wymyślaj, że w ZIP jest gotowy mod lub plik audio. Przedmioty do wykonania: bilet przyszłości, szalik, walizka, rachunek rekonstrukcji, zabezpieczenie, kontrakt, dziennik. Zaprojektuj ich ikony i tekstury finalne w tej samej palecie. Bez korzystania z cudzych komercyjnych zasobów.\n\nPEŁNA HISTORIA I SPECYFIKACJA\n'''
+for f in ['HISTORIA.md','MECHANIKI_I_ROZWIAZANIA.md','SCENARIUSZ_BEZ_DIALOGOW.md','PROJEKT_MAP.md','TECHNICZNE_I_ODBIOR.md','POSTACIE_I_MOBY.json']:
+ base+='\n\n'+(R/'01_HISTORIA'/f).read_text(encoding='utf-8')
+w('05_PROMPT/PROMPT_DO_SKOPIOWANIA.txt',base)
+print('Story and prompt ready;',len(base),'characters')

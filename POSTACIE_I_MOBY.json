@@ -1,0 +1,77 @@
+[
+  {
+    "id": "konduktor",
+    "nazwa": "Konduktor Jutrzejszego Pociągu",
+    "hp": 26,
+    "zachowanie": "Neutralny kontroler, stempel i cień mają oddzielne hitboxy interakcji. Nie ma walki z obowiązkowym NPC.",
+    "liczba_kuboidow": 44,
+    "rozmiar_tekstury": [
+      128,
+      128
+    ],
+    "model": "02_MODELE/konduktor/konduktor.bbmodel",
+    "geometria": "02_MODELE/konduktor/konduktor.geo.json",
+    "animacje": "02_MODELE/konduktor/konduktor.animation.json",
+    "uwagi": "Geometria i podstawowe pliki idle/walk gotowe. Integracja renderera, kontrolerów i animacji specjalnych do wdrożenia."
+  },
+  {
+    "id": "nurek_dzwonowy",
+    "nazwa": "Nurek Dzwonowy",
+    "hp": 32,
+    "zachowanie": "Czteronożny serwisant podwodny. Idzie za zapaloną lampą; odsuwa rurę, nie prowadzi dialogu.",
+    "liczba_kuboidow": 72,
+    "rozmiar_tekstury": [
+      128,
+      128
+    ],
+    "model": "02_MODELE/nurek_dzwonowy/nurek_dzwonowy.bbmodel",
+    "geometria": "02_MODELE/nurek_dzwonowy/nurek_dzwonowy.geo.json",
+    "animacje": "02_MODELE/nurek_dzwonowy/nurek_dzwonowy.animation.json",
+    "uwagi": "Geometria i podstawowe pliki idle/walk gotowe. Integracja renderera, kontrolerów i animacji specjalnych do wdrożenia."
+  },
+  {
+    "id": "aktorka_bez_roli",
+    "nazwa": "Aktorka Bez Roli",
+    "hp": 18,
+    "zachowanie": "Marionetka odtwarzająca próby. Neutralna, po ujawnieniu projekcji zatrzymuje się, bez utraty dowodu.",
+    "liczba_kuboidow": 49,
+    "rozmiar_tekstury": [
+      128,
+      128
+    ],
+    "model": "02_MODELE/aktorka_bez_roli/aktorka_bez_roli.bbmodel",
+    "geometria": "02_MODELE/aktorka_bez_roli/aktorka_bez_roli.geo.json",
+    "animacje": "02_MODELE/aktorka_bez_roli/aktorka_bez_roli.animation.json",
+    "uwagi": "Geometria i podstawowe pliki idle/walk gotowe. Integracja renderera, kontrolerów i animacji specjalnych do wdrożenia."
+  },
+  {
+    "id": "ida",
+    "nazwa": "Ida",
+    "hp": 20,
+    "zachowanie": "Siostra gracza. Chroniona questowo, jej stan uwolnienia synchronizowany; model pozostaje w epilogu.",
+    "liczba_kuboidow": 38,
+    "rozmiar_tekstury": [
+      128,
+      128
+    ],
+    "model": "02_MODELE/ida/ida.bbmodel",
+    "geometria": "02_MODELE/ida/ida.geo.json",
+    "animacje": "02_MODELE/ida/ida.animation.json",
+    "uwagi": "Geometria i podstawowe pliki idle/walk gotowe. Integracja renderera, kontrolerów i animacji specjalnych do wdrożenia."
+  },
+  {
+    "id": "aniol_minuty",
+    "nazwa": "Anioł Ostatniej Minuty",
+    "hp": 120,
+    "zachowanie": "Egzekutor umowy. 5 obrażeń kontaktu, 7 szarży, 2 sekundy ostrzeżenia; walka rozwiązywana przez koła, nie HP.",
+    "liczba_kuboidow": 72,
+    "rozmiar_tekstury": [
+      128,
+      128
+    ],
+    "model": "02_MODELE/aniol_minuty/aniol_minuty.bbmodel",
+    "geometria": "02_MODELE/aniol_minuty/aniol_minuty.geo.json",
+    "animacje": "02_MODELE/aniol_minuty/aniol_minuty.animation.json",
+    "uwagi": "Geometria i podstawowe pliki idle/walk gotowe. Integracja renderera, kontrolerów i animacji specjalnych do wdrożenia."
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "modele_kuboidy": {
+    "aktorka_bez_roli": 49,
+    "konduktor": 44,
+    "ida": 38,
+    "nurek_dzwonowy": 72,
+    "aniol_minuty": 72
+  },
+  "struktury_bloki": {
+    "05_serce": 8890,
+    "02_ocean": 11166,
+    "01_peron": 8472,
+    "04_ogrod": 9539,
+    "03_teatr": 9476
+  },
+  "sprawdzone": [
+    "JSON",
+    "unikalność UUID",
+    "UV w granicach tekstury",
+    "hierarchia kości i odwołania animacji",
+    "PNG",
+    "NBT parsowane niezależnym czytnikiem",
+    "granice i indeksy struktur",
+    "schody z facing south",
+    "komplet ilustracji",
+    "CRC ZIP"
+  ],
+  "niesprawdzone": [
+    "uruchomienie Minecraft 1.21.4",
+    "import w Blockbench",
+    "runtime renderera Java",
+    "działanie mechanik fabularnych — brak kodu moda"
+  ]
+}
